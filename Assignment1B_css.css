@@ -1,0 +1,59 @@
+/*header css and global elements*/
+
+css_selector {
+  css-property: css-value;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg-base: #172815;
+  --bg-card: #3e5622;
+  --main-color: #709255;
+  --border-outline: #95b46a;
+  --accent: #83781b;
+  --text: #ffff;
+  --text-mute: #dcdcdc;
+  --main-color-hover: #708100;
+  --font-family: "times new roman";
+  --transition-speed: 0.2s;
+}
+
+html {
+  scroll-behavior: auto;
+  font-family: var(--font-family);
+  background-color: var(--bg-base);
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid var(--transition-speed);
+}
+
+.navbar {
+  position: sticky;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5rem 1 rem 3rem 1.5rem;
+  max-width: 900px;
+}
