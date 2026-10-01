@@ -57,3 +57,25 @@ html {
   padding: 5rem 1 rem 3rem 1.5rem;
   max-width: 900px;
 }
+
+/*part 2 cards*/
+
+.grid-features {
+  display: grid;
+  grid-template-columns:
+    repeat auto-fit,
+    minmax(280px, 1fr);
+  gap: 1.5rem;
+}
+
+.card-features {
+  background-color: var(--bg-card);
+  border: 2px solid var(--border-outline);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.feature-header {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
