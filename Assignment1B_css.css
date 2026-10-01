@@ -18,11 +18,13 @@ css_selector {
   --main-color: #709255;
   --border-outline: #95b46a;
   --accent: #83781b;
-  --text: #ffff;
+  --text: #8b8f58;
   --text-mute: #dcdcdc;
   --main-color-hover: #708100;
   --font-family: "times new roman";
   --transition-speed: 0.2s;
+  --bg-second: #031a00;
+  --title-color: #4b7e44;
 }
 
 html {
@@ -43,10 +45,29 @@ html {
   text-decoration: none;
   border-radius: 6px;
   border: 1px solid var(--transition-speed);
+  color: var(--text);
 }
 
+.title-co {
+  color: var(--title-color);
+}
+
+.logo {
+  width: 45px;
+  height: auto;
+  align-items: center;
+  margin-top: 1rem;
+}
 .navbar {
   position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000000000;
+  background-color: var(--bg-second);
+  border-bottom: 2px solid;
+  border-color: var(--border-outline);
 }
 
 .hero-section {
@@ -61,7 +82,7 @@ html {
 /*part 2 cards*/
 
 .grid-features {
-  display: grid;
+  display: inline-flex;
   grid-template-columns:
     repeat auto-fit,
     minmax(280px, 1fr);
@@ -73,9 +94,41 @@ html {
   border: 2px solid var(--border-outline);
   padding: 2rem;
   border-radius: 8px;
+  margin-top: 2rem;
 }
 
 .feature-header {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
+}
+
+/*part 3 pricing*/
+
+.card-for-prices {
+  background-color: var(--bg-card);
+  border: 2px solid var (var(--border-outline));
+  display: flex;
+  flex-direction: column;
+}
+
+/*part 4 footer*/
+
+.footer-section {
+  border-top: 0.5px solid var(--border-outline);
+  padding: 1rem 2rem;
+  margin-top: 4rem;
+  color: var(--text);
+}
+
+.container-for-footer {
+  max-width: 90px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-mute);
+}
+
+.btn:hover {
+  color: var(--text-mute);
 }
